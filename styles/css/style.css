@@ -333,7 +333,7 @@ body {
 }
 @media (max-width: 768px) {
   .swiper-slide__img {
-    max-width: 80%;
+    max-width: 90%;
     max-height: 100%;
   }
 }
@@ -497,7 +497,7 @@ body {
 }
 @media (max-width: 425px) {
   .form__default-input-style {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
 }
 .form__flex-container {
