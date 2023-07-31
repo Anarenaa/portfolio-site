@@ -1,10 +1,10 @@
-
 $textcolor: #000;
 $bgcolor: rgb(243, 243, 243);
 $bgcolor_opacity: rgb(243, 243, 243, 0.95);
 $hover-color: #007274;
 $color-line: rgb(199,199,199);
 $specialmargin: 35px;
+$adapt_specialmargin: $specialmargin - 10px;
 
 %button {
     background-color: transparent;
@@ -430,7 +430,13 @@ body{
         }
 
         @media (max-width: 425px) {
-            margin-bottom: calc($specialmargin - 5px);
+            margin-bottom: $adapt_specialmargin;
+            &:hover{
+                margin-bottom: calc($adapt_specialmargin - 1px);
+            }
+            &:focus{
+                margin-bottom: calc($adapt_specialmargin - 1px);
+            }
         }
     }
     
@@ -499,10 +505,14 @@ body{
 .form__default-input-style:focus ~ .form__label,
 .form__default-input-style:valid ~ .form__label{
     top: -25px;
-    font-size: 18px;
+    font-size: clamp(16px, 1vw + 0.75rem, 18px);
     background-color: $bgcolor;
     padding: 0;
     transition: 0.5s;
+
+    @media (max-width: 576px) {
+        top: -20px;
+    }
 }
 
 
