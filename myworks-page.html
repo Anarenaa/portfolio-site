@@ -240,12 +240,21 @@
     <script src="js/swiper.min.js"></script>
     <script src="js/swiper.js"></script>
     <script>
-        document.querySelectorAll('.swiper-slide').forEach(img => {
+        if (window.innerWidth <= 768) {
+            document.querySelectorAll('.swiper-slide__img').forEach(img => {
+                img.onclick = () => {
+                    document.querySelector('.pop-up').style.display = 'block';
+                    document.querySelector('.pop-up__img').src = img.getAttribute('src');
+                }
+            });
+        } else if (window.innerWidth > 768) {
+            document.querySelectorAll('.swiper-slide').forEach(img => {
             img.addEventListener('dblclick', () => {
                 document.querySelector('.pop-up').style.display = 'block';
                 document.querySelector('.pop-up__img').src = img.querySelector('.swiper-slide__img').getAttribute('src');
             });
         });
+        };
 
 
         document.querySelector('.pop-up__back-button').onclick = () => {
