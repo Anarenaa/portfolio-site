@@ -286,7 +286,7 @@ body{
             object-fit: cover;
             background: transparent;
             @media (max-width: 768px) {
-                max-width: 80%;
+                max-width: 90%;
                 max-height: 100%;
             }
         }
@@ -430,7 +430,7 @@ body{
         }
 
         @media (max-width: 425px) {
-            margin-bottom: calc($specialmargin - 10px);
+            margin-bottom: calc($specialmargin - 5px);
         }
     }
     
