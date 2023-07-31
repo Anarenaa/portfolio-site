@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="styles/css/reset.css">
+    <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+
+            <nav class="navbar">
+
+                <h1 class="header__logo-name">
+                    <a href="index.html">
+                        Анастасия Микулич
+                    </a>
+                </h1>
+
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="myworks-page.html" class="menu__link">Мои работы</a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a href="gallery.html" class="menu__link">Галерея</a>
+                    </li>
+
+                    <li class="menu__item">
+                        <span class="menu__link menu__link--active">Контакты</span>
+                    </li>
+                </ul>
+
+                <div class="hamburger-menu">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+
+            </nav>
+        </div>
+        </div>
+    </header>
+
+    <main class="contacts">
+        <div class="main-container">
+            <div class="contacts-inner">
+                <div class="contacts__info">
+                    <div class="contacts__title title">Обратная связь</div>
+                    <p class="contacts__description">
+                        Есть вопросы, жалобы или предложения? Смело пишите и ждите скорого ответа. Связаться со мной также можно по номеру телефона или найти в социальных сетях.
+                    </p>
+                </div>
+
+                <form class="form" action="#" >
+
+                    <div class="form__flex-container">
+                        <div class="form__input-container">
+                            <input type="text" class="form__first-name form__default-input-style" name="name" id="first-name" autocomplete="off" required>
+                            <label class="form__label" for="first-name">Имя</label>
+                        </div>
+
+                        <div class="form__input-container">
+                            <input type="text" class="form__last-name form__default-input-style" name="surname" id="last-name" autocomplete="off" required>
+                            <label class="form__label" for="last-name">Фамилия</label>
+                        </div>
+
+                    </div>
+
+                    <div class="form__input-container">
+                        <input type="email" name="email" class="form__email form__default-input-style" id="email" required>
+                        <label class="form__label" for="email">Эл. почта</label>
+                    </div>
+
+                    <div class="form__flex-container">
+                        <div class="form__input-container form__textarea-container">
+                            <textarea class="form__message form__default-input-style" name="message" id="textarea-message" required></textarea>
+                            <label class="form__label form__email-label" for="textarea-message">Сообщение</label>
+                        </div>
+
+                        <input class="form__submit-button" type="submit" value="Отправить">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-block">
+                    <p class="footer-block__title">Phone</p>
+                    <p class="footer-block__info">
+                        <a class="footer-block__text icon-phone" href="tel:+380939558099">+380-93-95-58-099</a>
+                    </p>
+                </div>
+                <div class="footer-block">
+                    <p class="footer-block__title">Email</p>
+                    <p class="footer-block__info icon-mail">
+                        <a target="_blank" class="footer-block__text icon-mail"
+                            href="mailto:vip.nastia07@gmail.com">vip.nastia07@gmail.com</a>
+                    </p>
+                </div>
+                <div class="footer-block">
+                    <p class="footer-block__title">Follow Me</p>
+                    <div class="footer-block__icons">
+                        <a target="_blank" href="https://www.instagram.com/___mika_15"><img class="footer-block__icon"
+                                src="img/icons/instagram.svg" alt="icon"></a>
+                        <a target="_blank" href="https://t.me/mika_13240"><img class="footer-block__icon"
+                                src="img/icons/telegram.svg" alt="icon"></a>
+                        <a target="_blank" href="https://www.youtube.com/channel/UCEePr95prWdWEdOiYROMgxQ"><img
+                                class="footer-block__icon" src="img/icons/youtube.svg" alt="icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/hamburger-menu.js"></script>
+
+</body>
+
+</html>
