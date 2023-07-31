@@ -497,7 +497,13 @@ body {
 }
 @media (max-width: 425px) {
   .form__default-input-style {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+  }
+  .form__default-input-style:hover {
+    margin-bottom: 24px;
+  }
+  .form__default-input-style:focus {
+    margin-bottom: 24px;
   }
 }
 .form__flex-container {
@@ -580,11 +586,17 @@ body {
 .form__default-input-style:focus ~ .form__label,
 .form__default-input-style:valid ~ .form__label {
   top: -25px;
-  font-size: 18px;
+  font-size: clamp(16px, 1vw + 0.75rem, 18px);
   background-color: rgb(243, 243, 243);
   padding: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+@media (max-width: 576px) {
+  .form__default-input-style:focus ~ .form__label,
+  .form__default-input-style:valid ~ .form__label {
+    top: -20px;
+  }
 }
 
 .footer {
