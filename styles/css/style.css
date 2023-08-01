@@ -725,7 +725,7 @@ main {
   }
 }
 @media (min-width: 1440px) {
-  .intro__description, .topic__text, .contacts__description, .form__submit-button, .intro__link-button {
+  .intro__description, .topic__text, .contacts__description, .form__submit-button, .intro__link-button, .footer-block__title, .menu__link {
     font-size: 25px;
   }
   .title {
@@ -733,5 +733,11 @@ main {
   }
   .topic__title {
     font-size: 40px;
+  }
+  .footer-block__text {
+    font-size: 22px;
+  }
+  .header__logo-name {
+    font-size: 30px;
   }
 }
