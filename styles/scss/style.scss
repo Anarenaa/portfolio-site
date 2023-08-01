@@ -27,14 +27,25 @@ body{
     color: $textcolor;
     background: rgb(243, 243, 243);
     font-family: 'Cormorant Garamond', serif;
+    display: flex;
+    flex-direction: column;
 }
 .container{
-    max-width: 1440px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 40px;
     @media (max-width: 576px) {
         padding: 0 25px;
     }
+    @media (min-width: 1440px) {
+        max-width: 1600px;
+    }
+}
+main {
+    flex: 1 0 auto;
+    align-self: center;
+    display: flex;
+    align-items: center;
 }
 .main-container {
     max-width: 1000px;
@@ -49,6 +60,9 @@ body{
     }
     @media (max-width: 768px) {
         margin-top: 150px;
+    }
+    @media (min-width: 1440px) {
+        max-width: 1200px;
     }
 }
 
@@ -596,5 +610,16 @@ body{
     }
     .icon-mail::before {
         background-image: url(../../img/icons/mail.svg);
+    }
+}
+@media (min-width: 1440px) {
+    .intro__description, .topic__text, .contacts__description, .form__submit-button, .intro__link-button {
+        font-size: 25px;
+    }
+    .title {
+        font-size: 50px;
+    }
+    .topic__title {
+        font-size: 40px;
     }
 }
