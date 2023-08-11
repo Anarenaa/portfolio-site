@@ -226,7 +226,7 @@ main {
     }
     &__description{
         line-height: 1.6em;
-        font-size: clamp(17px, 1vw + 1rem, 20px);
+        font-size: clamp(17px, 1vw + 0.75rem, 20px);
         text-align: justify;
         margin: 50px 0px;
     }
@@ -272,7 +272,7 @@ main {
     &__text {
         line-height: 1.6em;
         text-align: justify;
-        font-size: clamp(17px, 1vw + 1rem, 20px);
+        font-size: clamp(17px, 1vw + 0.75rem, 20px);
         margin-bottom: 30px;
     }
 }
