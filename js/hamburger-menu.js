@@ -15,7 +15,7 @@ const path = window.location.pathname;
 document.querySelectorAll('.menu__link').forEach(link => {
     const linkHref = link.getAttribute('href');
     
-    if (path === `/${linkHref}`) {
+    if (path === linkHref) {
         link.classList.add('menu__link--active');
         link.addEventListener('click', preventDefault);
         link.removeAttribute('href');
