@@ -11,9 +11,11 @@ function preventDefault(event) {
 }
 
 const path = window.location.pathname;
+console.log(path);
 
 document.querySelectorAll('.menu__link').forEach(link => {
     const linkHref = link.getAttribute('href');
+    console.log(linkHref);
     
     if (path === linkHref) {
         link.classList.add('menu__link--active');
