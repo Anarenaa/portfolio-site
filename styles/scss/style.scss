@@ -46,11 +46,12 @@ main {
 }
 .main-container {
     max-width: 1000px;
-    margin: 100px auto;
+    margin: 80px auto;
     padding: 0 40px;
     @media (max-width: 576px) {
         padding: 0 25px;
     }
+
     @media (max-width: 992px) {
         max-width: 800px;
     }
@@ -68,7 +69,7 @@ main {
 
     &__logo-name{
         color: #2F2E2E;
-        font-size: 25px;
+        font-size: 27px;
         font-weight: 700;
         position: relative;
         padding-left: 35px;
@@ -101,14 +102,15 @@ main {
     }
 
     &__link{
-        font-size: 20px;
+        font-size: 22px;
         color: $textcolor;
         transition: color 0.3s;
         &:hover{
             color: $hover-color;
         }
         &--active{
-            color: $hover-color;
+            color: $hover-color !important;
+            cursor: auto;
         }
     }
 }
@@ -395,7 +397,7 @@ main {
 .contacts {
     display: flex;
     align-items: center;
-    
+
     &-inner {
         display: flex;
         justify-content: space-between;
@@ -534,7 +536,7 @@ main {
 
 .footer{
     border-top: 1px solid $color-line;
-    padding: 30px 0;
+    padding: 15px 0;
     
     &-inner{
         display: flex;
@@ -558,42 +560,24 @@ main {
                 flex-basis: auto;
             }
         }
-        
-        &__title{
-            color: $textcolor;
+        &__info{
             font-size: 22px;
-            font-weight: bold;
-            @media (max-width: 576px) {
-                display: none;
-            }
-        }
-        &__text{
-            position: relative;
-            display: block;
-            font-size: 18px;
-            line-height: 1.5em;
-            color: $textcolor;
-
-            @media (max-width: 576px) {
-                padding-left: 25px;
-
-                &::before {
-                    content: "";
-                    width: 20px;
-                    height: 20px;
-                    position: absolute;
-                    left: 0;
-                    top: 5px;
-                    background-repeat: no-repeat;
-                }
-
-                               
-            }
+            font-weight: 600;
         }
         &__icon{
-            height: 24px; 
-            width: 24px;
-            margin: 5px 3px 0 0;
+            height: 30px; 
+            width: 30px;
+            
+            &:not(:last-child){
+                margin-right: 10px;
+            }
+
+            g {
+            transition: all 0.3s;
+            }
+            &:hover svg g{
+                fill: $hover-color;
+            }
             
             @media (max-width: 576px) {
                 height: 30px; 
@@ -603,15 +587,13 @@ main {
         }
         &__icons {
             text-align: center;
+            display: flex;
         }
     }
 }
 @media (max-width: 576px) {
     .icon-phone::before {
         background-image: url(../../img/icons/phone.svg);
-    }
-    .icon-mail::before {
-        background-image: url(../../img/icons/mail.svg);
     }
 }
 @media (min-width: 1440px) {

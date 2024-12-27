@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="only light">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="styles/css/reset.css">
+    <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- @import "header.html" -->
+
+    <main class="contacts">
+        <div class="main-container">
+            <div class="contacts-inner">
+                <div class="contacts__info">
+                    <div class="title contacts__title">Зворотній зв'язок</div>
+                    <p class="contacts__description">
+                        Маєте питання, зауваження чи пропозиції? Не соромтеся заповнити форму, я з радістю відповім найближчим часом! Списатися зі мною також можна в месенджерах або знайти в соціальних мережах.
+                    </p>
+                </div>
+
+                <form class="form" action="#" >
+
+                    <div class="form__flex-container">
+                        <div class="form__input-container">
+                            <input type="text" class="form__first-name form__default-input-style" name="name" id="first-name" autocomplete="off" required>
+                            <label class="form__label" for="first-name">Ім'я <span>*</span></label>
+                        </div>
+
+                        <div class="form__input-container">
+                            <input type="text" class="form__last-name form__default-input-style" name="surname" id="last-name" autocomplete="off" required>
+                            <label class="form__label" for="last-name">Прізвище</label>
+                        </div>
+
+                    </div>
+
+                    <div class="form__input-container">
+                        <input type="email" name="email" class="form__email form__default-input-style" id="email" required>
+                        <label class="form__label" for="email">Ел. скринька</label>
+                    </div>
+
+                    <div class="form__flex-container">
+                        <div class="form__input-container form__textarea-container">
+                            <textarea class="form__message form__default-input-style" name="message" id="textarea-message" required></textarea>
+                            <label class="form__label form__email-label" for="textarea-message">Текст</label>
+                        </div>
+
+                        <input class="form__submit-button" type="submit" value="Відправити">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- @import "footer.html" -->
+
+    <script src="js/hamburger-menu.js"></script>
+
+</body>
+
+</html>
