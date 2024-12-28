@@ -17,7 +17,7 @@ document.querySelectorAll('.menu__link').forEach(link => {
     const linkHref = link.getAttribute('href');
     console.log(linkHref);
     
-    if (path === linkHref) {
+    if (path === `/portfolio-site/${linkHref}`) {
         link.classList.add('menu__link--active');
         link.addEventListener('click', preventDefault);
         link.removeAttribute('href');
