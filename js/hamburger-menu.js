@@ -24,5 +24,6 @@ document.querySelectorAll('.menu__link').forEach(link => {
     } else {
         link.classList.remove('menu__link--active');
         link.removeEventListener('click', preventDefault);
+        console.log('Помилка');
     }
 });
