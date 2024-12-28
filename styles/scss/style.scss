@@ -5,6 +5,7 @@ $hover-color: #007274;
 $color-line: rgb(199,199,199);
 $specialmargin: 35px;
 $adapt_specialmargin: $specialmargin - 10px;
+$error-color: #ff5353;
 
 %button {
     background-color: transparent;
@@ -71,9 +72,11 @@ main {
         color: #2F2E2E;
         font-size: 27px;
         font-weight: 700;
-        position: relative;
-        padding-left: 35px;
-        &::before{
+        a{
+            position: relative;
+            padding-left: 35px;
+        }
+        a::before{
             content: "";
             width: 25px;
             height: 25px;
@@ -516,7 +519,8 @@ main {
     }
 }
 .form__default-input-style:focus ~ .form__label,
-.form__default-input-style:valid ~ .form__label{
+.form__default-input-style:valid ~ .form__label,
+.form__email.filled ~ .form__label{
     top: -25px;
     font-size: clamp(16px, 1vw + 0.75rem, 18px);
     background-color: $bgcolor;
@@ -527,7 +531,17 @@ main {
         top: -20px;
     }
 }
-
+.error{
+    ._req{
+        border: 1px solid $error-color;
+        &:focus, &:hover{
+            border: 2px solid $error-color;
+        }
+    }
+    label{
+        color: $error-color;
+    }
+}
 
 .footer{
     border-top: 1px solid $color-line;

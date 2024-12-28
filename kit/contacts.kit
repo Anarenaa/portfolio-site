@@ -29,30 +29,30 @@
                     </p>
                 </div>
 
-                <form class="form" action="#" >
+                <form class="form" novalidate>
 
                     <div class="form__flex-container">
                         <div class="form__input-container">
-                            <input type="text" class="form__first-name form__default-input-style" name="name" id="first-name" autocomplete="off" required>
-                            <label class="form__label" for="first-name">Ім'я <span>*</span></label>
+                            <input type="text" class="form__field form__first-name form__default-input-style _req" name="name" id="first-name" autocomplete="off" required>
+                            <label class="form__label" for="first-name">Ім'я <span class="label-span-req">*</span></label>
                         </div>
 
                         <div class="form__input-container">
-                            <input type="text" class="form__last-name form__default-input-style" name="surname" id="last-name" autocomplete="off" required>
-                            <label class="form__label" for="last-name">Прізвище</label>
+                            <input type="text" class="form__field form__last-name form__default-input-style _req" name="surname" id="last-name" autocomplete="off" required>
+                            <label class="form__label" for="last-name">Прізвище <span class="label-span-req">*</span></label>
                         </div>
 
                     </div>
 
                     <div class="form__input-container">
-                        <input type="email" name="email" class="form__email form__default-input-style" id="email" required>
-                        <label class="form__label" for="email">Ел. скринька</label>
+                        <input type="email" name="email" class="form__field form__email form__default-input-style _req" id="email" required>
+                        <label class="form__label" for="email">Ел. скринька <span class="label-span-req">*</span></label>
                     </div>
 
                     <div class="form__flex-container">
                         <div class="form__input-container form__textarea-container">
-                            <textarea class="form__message form__default-input-style" name="message" id="textarea-message" required></textarea>
-                            <label class="form__label form__email-label" for="textarea-message">Текст</label>
+                            <textarea class="form__field form__message form__default-input-style _req" name="message" id="textarea-message" required></textarea>
+                            <label class="form__label form__email-label" for="textarea-message">Текст <span class="label-span-req">*</span></label>
                         </div>
 
                         <input class="form__submit-button" type="submit" value="Відправити">
@@ -65,6 +65,8 @@
     <!-- @import "footer.html" -->
 
     <script src="js/hamburger-menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script src="js/form.js"></script>
 
 </body>
 

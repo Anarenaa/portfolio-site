@@ -85,10 +85,12 @@ main {
   color: #2F2E2E;
   font-size: 27px;
   font-weight: 700;
+}
+.header__logo-name a {
   position: relative;
   padding-left: 35px;
 }
-.header__logo-name::before {
+.header__logo-name a::before {
   content: "";
   width: 25px;
   height: 25px;
@@ -619,7 +621,8 @@ main {
 }
 
 .form__default-input-style:focus ~ .form__label,
-.form__default-input-style:valid ~ .form__label {
+.form__default-input-style:valid ~ .form__label,
+.form__email.filled ~ .form__label {
   top: -25px;
   font-size: clamp(16px, 1vw + 0.75rem, 18px);
   background-color: rgb(243, 243, 243);
@@ -629,9 +632,20 @@ main {
 }
 @media (max-width: 576px) {
   .form__default-input-style:focus ~ .form__label,
-  .form__default-input-style:valid ~ .form__label {
+  .form__default-input-style:valid ~ .form__label,
+  .form__email.filled ~ .form__label {
     top: -20px;
   }
+}
+
+.error ._req {
+  border: 1px solid #ff5353;
+}
+.error ._req:focus, .error ._req:hover {
+  border: 2px solid #ff5353;
+}
+.error label {
+  color: #ff5353;
 }
 
 .footer {
