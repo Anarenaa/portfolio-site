@@ -302,6 +302,10 @@ main {
                 max-width: 90%;
                 max-height: 100%;
             }
+
+            &--scale{
+                aspect-ratio: 4/3;
+            }
         }
         
         &-active {

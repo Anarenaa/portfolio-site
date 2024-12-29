@@ -366,6 +366,9 @@ main {
     max-height: 100%;
   }
 }
+.swiper-slide__img--scale {
+  aspect-ratio: 4/3;
+}
 @media (min-width: 768px) {
   .swiper-slide-active {
     -webkit-transform: scale(1.2);
