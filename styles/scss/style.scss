@@ -157,7 +157,7 @@ main {
         display: flex;
         position: fixed;
         right: -100%;
-        top: 81px;
+        top: 71px;
         gap: 0;
         flex-direction: column;
         justify-content: center;
@@ -168,10 +168,6 @@ main {
         transition: 0.3s;
         &.active {
             right: 0;
-        }
-
-        @media (max-width: 576px) {
-            top: 71px;
         }
     }
     .menu__item {

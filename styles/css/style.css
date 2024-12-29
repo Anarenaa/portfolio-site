@@ -178,7 +178,7 @@ main {
     display: flex;
     position: fixed;
     right: -100%;
-    top: 81px;
+    top: 71px;
     gap: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -197,13 +197,6 @@ main {
   .menu.active {
     right: 0;
   }
-}
-@media (max-width: 768px) and (max-width: 576px) {
-  .menu {
-    top: 71px;
-  }
-}
-@media (max-width: 768px) {
   .menu__item {
     margin: 25px 0;
     border-right: none;
